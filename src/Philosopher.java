@@ -17,7 +17,7 @@ public class Philosopher implements Runnable {
                 Thread.sleep((int) (Math.random() * 2000));
 
                 synchronized (this.left){
-                    System.out.println(name + " using left fork" + this.left.getLabel());
+                    System.out.println(name + " using left fork " + this.left.getLabel());
 
                     synchronized (this.right){
                         System.out.println(name + " using right fork " + this.right.getLabel());
